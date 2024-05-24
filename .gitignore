@@ -1,0 +1,16 @@
+node_modules/
+package-lock.json
+src/program/target/
+src/program/cargo.lock
+dist/
+last_program.rs
+last_test.js
+last_main.ts
+ownership.rs
+work.rs
+stock_to_fix.rs
+to_simplify.rs
+z_last.rs
+z_retrieve_ok.rs
+z_send_0.rs
+z_send_1.rs
