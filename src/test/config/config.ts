@@ -1,7 +1,7 @@
 export const NETWORK_DEV = 'devnet'
 export const RPC = 'https://api.devnet.solana.com'
 
-export const PROGRAM_ID = '754YF9JKMHfBWZyiBg2iRnyWyw7aCzyRJwZs3f2Ld3eE'
+export const PROGRAM_ID = '4hpHCxM1mT1TfrxPzcvQRYSkf2Jaf3nuTY6F1ZQEXZfB'
 
 export const ACCOUNT_CLIENT_PK = '6u1TmWs42bz7uXbgwHxMZfcQnc2u4QXwWH7DcEwPLEVf'
 export const ACCOUNT_CLIENT_SK = '4o19uhMBBmYwuyEHv9zj2kMcgLSziCcpjEUWzZMDAqqc9JcTPPWK4yqwyKQYmUY9MGdEPQMky7ExxtJvyyV4dvnu'

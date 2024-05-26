@@ -66,8 +66,8 @@ fn create_order(accounts: &[AccountInfo], order_data: &[u8]) -> ProgramResult {
     let funding = u32::from_le_bytes([ order_data[38], order_data[39], order_data[40], order_data[41] ]);
     let fee = u32::from_le_bytes([ order_data[42], order_data[43], order_data[44], order_data[45] ]);
 
-    let funding_u64 = (funding * 10000000) as u64;
-    let fee_u64 = (fee * 10000000) as u64;
+    let funding_u64 = u64::from(funding) * 10000000;
+    let fee_u64 = u64::from(fee) * 10000000;
 
     if *executor_bot_account.key != EXECUTOR_BOT_PUBLIC_KEY { return Err(ProgramError::InvalidAccountData);}
     invoke(&system_instruction::transfer( client_account.key, executor_bot_account.key, funding_u64), &[ client_account.clone(), executor_bot_account.clone() ])?;

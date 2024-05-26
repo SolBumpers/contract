@@ -24,8 +24,8 @@ async function createOrder(whoPk: PublicKey, whoKeypair: Keypair) {
     const bot = 3;
     const frequency = 60;
     const duration = 24;
-    const funding_lp = (1 * 100);
-    const fee_lp = (0.25 * 100);
+    const funding_lp = (5 * 100);
+    const fee_lp = (0.15 * 100);
 
     const orderData = Buffer.alloc(46);
     orderData.set(tokenBytes, 0);
@@ -80,8 +80,8 @@ async function main() {
     // await initialize(newAccountPubkey, accountOwnerKeypair)
     console.log('\nCREATING ORDER...\n')
     await createOrder(accountClientPk, accountClientKeypair)
-    //console.log('\nCANCELING ORDER...\n')
-    //await cancelOrder(accountClientPk, accountClientKeypair, 657182)
+    // console.log('\nCANCELING ORDER...\n')
+    // await cancelOrder(accountClientPk, accountClientKeypair, 657182)
     await getBulkBalance()
 }
 
