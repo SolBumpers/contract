@@ -1,8 +1,8 @@
 use solana_program::{account_info::{next_account_info, AccountInfo}, entrypoint, entrypoint::ProgramResult, msg, program_error::ProgramError, pubkey::Pubkey, system_instruction, program::invoke};
 use borsh::{BorshDeserialize, BorshSerialize};
 
-const PROTOCOL_FEE_PUBLIC_KEY: Pubkey = Pubkey::new_from_array([ 19, 200, 189, 163, 183, 254, 129, 180, 7, 94, 245, 132, 161, 148, 214, 79, 240, 160, 208, 75, 111, 34, 202, 162, 46, 253, 5, 94, 19, 109, 66, 236 ]);
-const EXECUTOR_BOT_PUBLIC_KEY: Pubkey = Pubkey::new_from_array([ 252, 243, 106, 97, 155, 19, 81, 84, 236, 11, 218, 225, 187, 6, 13, 26, 192, 27, 177, 34, 160, 16, 184, 63, 66, 234, 236, 64, 78, 156, 122, 254 ]);
+const PROTOCOL_FEE_PUBLIC_KEY: Pubkey = Pubkey::new_from_array([226, 251,  10,  43,  66,  70,  15, 243, 80, 125,  82, 120,  75, 185,  25, 206, 208,  53,  95, 167,  60,  92, 129, 183, 198,  48, 205, 158, 164,  56, 120, 184]);
+const EXECUTOR_BOT_PUBLIC_KEY: Pubkey = Pubkey::new_from_array([ 34, 116, 200, 187, 126, 1, 243,  90, 29,  37,  88, 251,  55, 147, 147, 111, 87, 139, 125, 199, 120, 192,   4,  51, 126, 255, 197,  87, 210,   3,  89, 249 ]);
 
 #[derive(BorshSerialize, BorshDeserialize, Debug)]
 pub struct NewOrder {

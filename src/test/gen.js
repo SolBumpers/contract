@@ -1,7 +1,7 @@
 const base58 = require('bs58');
 
-const protocol_address = '2LEHP4cHHYd1qWi21AgBMdPFHL9EbMKbk16hQzqnGtps';
-const bot_address = 'J2R22pquB6YC45oo6gyjMEnAztdQ8mXZ6sCXmBFn8Sdj'
+const protocol_address = 'GH3AJux7zicopHnSCSHwgxhMaNeVLzUgxTNqCxS4LsRy';
+const bot_address = '3KW9UmB16bpCE7qayxgixXj43vXVqAwEZp5aeFxNSyGU'
 
 function genProtocol() {
     const publicKeyBytes = base58.decode(protocol_address);
